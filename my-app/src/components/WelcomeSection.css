@@ -1,0 +1,31 @@
+.welcome-section > h1 {
+  font-size: 100px;
+}
+
+.welcome-section {
+  background: url("../components/images/img-1.jpg");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.spin-logo{
+  height: 40vmin;
+  -webkit-user-drag: none;
+  
+
+  animation-name:rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes rotate{
+  100%{
+    transform:rotate(360deg);
+  }
+}
